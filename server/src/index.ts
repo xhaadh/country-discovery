@@ -1,4 +1,3 @@
-// server/src/index.ts
 import express from "express";
 import cors from "cors";
 import "express-async-errors";

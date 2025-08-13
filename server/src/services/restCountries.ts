@@ -1,4 +1,3 @@
-// server/src/services/restCountries.ts
 import axios from "axios";
 import { cache } from "../utils/cache";
 
@@ -55,7 +54,6 @@ export async function searchCountries(opts: {
   let list = all as any[];
   const query = opts.name ? opts.name.toLowerCase() : '';
 
-  // Combined search for both name and capital
   if (query) {
     list = list.filter((c) => 
       (c.name?.common?.toLowerCase().includes(query) || 
@@ -64,7 +62,6 @@ export async function searchCountries(opts: {
     );
   }
 
-  // Existing filters
   if (opts.capital) {
     const q = opts.capital.toLowerCase();
     list = list.filter((c) => (c.capital || []).some((cap: string) => cap.toLowerCase().includes(q)));

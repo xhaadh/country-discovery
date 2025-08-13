@@ -1,4 +1,3 @@
-// server/src/utils/cache.ts
 import NodeCache from "node-cache";
 import dotenv from "dotenv";
 dotenv.config();

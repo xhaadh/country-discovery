@@ -1,4 +1,3 @@
-// server/src/controllers/countriesController.ts
 import * as rc from "../services/restCountries";
 import { Request, Response } from "express";
 
