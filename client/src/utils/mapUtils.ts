@@ -1,4 +1,3 @@
-// Utility functions for map operations
 export const getMapBounds = (positions: [number, number][]): [[number, number], [number, number]] => {
   if (positions.length === 0) {
     return [

@@ -26,8 +26,8 @@ const HomePage: React.FC = () => {
     error,
     hasMore,
     filters,
-    page, // Get page from state
-    limit, // Get limit from state
+    page,
+    limit, 
   } = useAppSelector((state) => state.country);
 
   const [localSearch, setLocalSearch] = useState("");
@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
             value={filters.timezone}
             onChange={(e) => handleTimezoneChange(e.target.value)}
             placeholder="Enter timezone"
-            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-700"
+            className="w-full p-3 rounded-lg bg-[#F4F1EC] border border-gray-200 focus:border-gray-700 focus:ring-2 focus:ring-gray-700 outline-none"
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Header />   
-      <main className="container mx-auto px-4 py-8 max-w-7xl">
+      <main className="container mx-auto px-4 max-w-7xl">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/country/:code" element={<DetailPage />} />
